@@ -5,6 +5,7 @@ import path from "path"
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: "/NivelUp-English-Platform/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
