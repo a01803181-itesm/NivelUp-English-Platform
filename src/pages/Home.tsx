@@ -65,7 +65,7 @@ export default function Home() {
     return () => { isMounted = false; };
   }, [loadEnrolled, loadBrowse]);
 
-  const handleEnroll = async (courseId: string | number) => {
+  const handleEnroll = async () => {
     setEnrolling(true);
     try {
       await new Promise(resolve => setTimeout(resolve, 1200));
